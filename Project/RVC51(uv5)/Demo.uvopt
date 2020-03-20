@@ -136,48 +136,80 @@
           <Type>0</Type>
           <LineNumber>146</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>-16773194</Address>
+          <Address>-16772764</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\liziyuan\Desktop\Experiment（新塘）\Project\RVC51(uv5)\App\task.c</Filename>
+          <Filename>App\task.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\unnamed\TASK\146</Expression>
+          <Expression></Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
           <LineNumber>160</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>-16772970</Address>
+          <Address>-16772540</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\liziyuan\Desktop\Experiment（新塘）\Project\RVC51(uv5)\App\task.c</Filename>
+          <Filename>App\task.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\unnamed\TASK\160</Expression>
+          <Expression></Expression>
         </Bp>
         <Bp>
           <Number>2</Number>
           <Type>0</Type>
           <LineNumber>432</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>-16771325</Address>
+          <Address>-16770895</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\liziyuan\Desktop\Experiment（新塘）\Project\RVC51(uv5)\App\task.c</Filename>
+          <Filename>App\task.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\unnamed\TASK\432</Expression>
+          <Expression></Expression>
+        </Bp>
+        <Bp>
+          <Number>3</Number>
+          <Type>0</Type>
+          <LineNumber>35</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>-16764632</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>App\main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
+        </Bp>
+        <Bp>
+          <Number>4</Number>
+          <Type>0</Type>
+          <LineNumber>39</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>-16768598</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>Bsp\bsp_adc.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\unnamed\BSP_ADC\39</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -220,6 +252,21 @@
           <count>7</count>
           <WinNumber>1</WinNumber>
           <ItemText>OLEDWeather</ItemText>
+        </Ww>
+        <Ww>
+          <count>8</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>s_Bandgap_voleage</ItemText>
+        </Ww>
+        <Ww>
+          <count>9</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>bandgapHigh</ItemText>
+        </Ww>
+        <Ww>
+          <count>10</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>bandgapLow</ItemText>
         </Ww>
       </WatchWindow1>
       <MemoryWindow1>

@@ -33,16 +33,22 @@ bit Voltage_Check(void)
 	temp = VDD_Read();
 
 	Enable_ADC_AIN0;
-    ADC_Read(temp);                     // 先转换一次（第一次读值不准）
+//    ADC_Read(temp);                     // 先转换一次（第一次读值不准）
 	x_value = ADC_Read(temp);
 	
 	Enable_ADC_AIN1;
-    ADC_Read(temp);                     // 先转换一次（第一次读值不准）
+//    ADC_Read(temp);                     // 先转换一次（第一次读值不准）
 	y_value = ADC_Read(temp);;
 
 	ADCCON1 &= ~0x01;				// 关闭 ADC
 
 #if _UART_DEBUG
+//    temp_buf[0] = (temp / 1000) % 10 + '0';
+//    temp_buf[1] = (temp / 100) % 10 + '0';
+//    temp_buf[2] = (temp / 10) % 10 + '0';
+//    temp_buf[3] = (temp) % 10 + '0';
+//    DUBUG_STRING(temp_buf, 6);
+
     temp_buf[0] = (x_value / 1000) % 10 + '0';
     temp_buf[1] = (x_value / 100) % 10 + '0';
     temp_buf[2] = (x_value / 10) % 10 + '0';
@@ -59,7 +65,7 @@ bit Voltage_Check(void)
 
 	/* 浮动误差 ±30 */
 	left_scope = 0 + 30;
-	right_scope = temp -30;
+	right_scope = temp - 30;
 	
 	if(x_value < left_scope && (y_value < right_scope && y_value > left_scope))
 	{
@@ -123,18 +129,18 @@ bit Voltage_Check(void)
 	{
 		Protocol[3] = CENTER;
 //		UART0_Printf("CENTER");
-		DUBUG_STRING("CENTER",6);
+//		DUBUG_STRING("CENTER",6);
 		if(Count < 8)
 		{
 			Count++;
 		}
 	}
-	DUBUG_STRING("\r\n",2);
 	
 	if(8 == Count)
 	{
 		return 0;		// 无动作，发送 7次停止
 	}
+	DUBUG_STRING("\r\n",2);
 	
 	return 1;
 }

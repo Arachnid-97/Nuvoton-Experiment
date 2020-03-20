@@ -31,6 +31,7 @@ void System_Start(void)
 	Timer3_Init();
 	Timer0_Init();
     UART0_Timer1_Init();
+	ADC_Config();
 	Rocker_KeyConfig();
 	OLED_Init();
 	NRF24L_Init();
@@ -49,9 +50,10 @@ int main(void)
 	uint8_t len = 0;
 
     System_Start();
-	
-	SoftwareDelay_ms(100);
+
 //    LED_ON;
+	SoftwareDelay_ms(100);
+    LED_OFF;
 
 //	DUBUG_PRINTF("Power Value = %d\n",VDD_Read());
 	len = sizeof(weather_content);

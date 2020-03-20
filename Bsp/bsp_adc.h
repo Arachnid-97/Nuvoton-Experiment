@@ -12,8 +12,8 @@
 #define POWER_VOLTAGE   4950UL        // µÁ—π«ß±∂
 #define ADC_DIP(X)      (X)           // ADC∑÷±Ê¬ 
 
-uint32_t VDD_Read(void);
-uint32_t ADC_Read( const uint32_t Ref );
+double VDD_Read(void);
+uint32_t ADC_Read( const double Ref );
 void ADC_Config(void);
 
 

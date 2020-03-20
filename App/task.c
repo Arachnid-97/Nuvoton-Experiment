@@ -371,7 +371,7 @@ void Hygrothermograph_Updata(void)
 	{
 		g_DHT11_Read_flag = 0;
 		if(Read_DHT11(&DHT11_Data))
-		{				
+		{
 			OLED_ShowNum(86, 7, DHT11_Data.temp_int, 2, OLED_FONT_EIGHT, ENABLE, DISABLE);
 //				OLED_ShowChar(102, 7, '.', OLED_FONT_EIGHT, DISABLE);
 			OLED_ShowNum(110 - 1, 7, DHT11_Data.temp_deci, 1, OLED_FONT_EIGHT, DISABLE, DISABLE);
