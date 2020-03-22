@@ -30,7 +30,13 @@ bit Voltage_Check(void)
 #endif /* _UART_DEBUG */
 
 //    SoftwareDelay_ms(1);          // 稍微等待一下 ref电压稳定
+#if 0
 	temp = VDD_Read();
+	
+#else
+	temp = MEAS_VOL;
+	
+#endif
 
 	Enable_ADC_AIN0;
 //    ADC_Read(temp);                     // 先转换一次（第一次读值不准）

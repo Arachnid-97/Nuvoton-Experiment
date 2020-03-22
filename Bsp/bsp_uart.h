@@ -19,7 +19,7 @@
 												UART0_SendString((fmt),len);\
 											}while(0)
 
-#define MAX_L				50									//接收缓冲区最大长度
+#define MAX_L				50				//接收缓冲区最大长度
 
 extern uint8_t g_ReceiveBuf[MAX_L];			
 extern uint16_t g_RxCnt;

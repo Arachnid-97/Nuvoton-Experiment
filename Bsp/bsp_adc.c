@@ -2,7 +2,8 @@
 #include "bsp_time.h"
 
 
-#define _BENCHMARK_VOLTAGE      // 开基准电压校验则 define
+/* 开基准电压校验则使能 */
+#define _BENCHMARK_VOLTAGE      	0
 
 static bit BIT_TMP;
 static double s_Bandgap_voleage = 0;
@@ -13,7 +14,7 @@ static double s_Bandgap_voleage = 0;
 参    数 ： 无
 返 回 值 ： bandgap_value ---- 内部带隙电压数据
 *************************************************/
-#ifdef _BENCHMARK_VOLTAGE
+#if _BENCHMARK_VOLTAGE
 static double Read_Bandgap(void)
 {
 	uint8_t bandgapHigh,bandgapLow;
@@ -51,7 +52,7 @@ static double Read_Bandgap(void)
 参    数 ： 无
 返 回 值 ： VDD_value ---- 内部电源数据（放大1000倍）
 *************************************************/
-#ifdef _BENCHMARK_VOLTAGE
+#if _BENCHMARK_VOLTAGE
 double VDD_Read(void)
 {
 	uint8_t i;
@@ -106,7 +107,11 @@ void ADC_Config(void)
 	P17_Input_Mode;
 	P30_Input_Mode;
 	
+#if _BENCHMARK_VOLTAGE
 	s_Bandgap_voleage = Read_Bandgap();
+	
+#endif /* _BENCHMARK_VOLTAGE */
+
 }
 
 

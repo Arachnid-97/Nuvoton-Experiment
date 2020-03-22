@@ -240,6 +240,8 @@ uint8_t NRF24L_SendPacket( const uint8_t *pData, uint8_t Const )
 		state = NRF24L_Read_RegByte(STATUS);			// 读取状态寄存器的值
 		NRF24L_Write_RegByte(STATUS, state);			// 清除 TX_DS或 MAX_RT中断标志
 	//	NRF_CE(HIGH);
+		
+//		UART0_SendByte(state);
 				
 		switch(state & 0x30)
 		{
@@ -388,7 +390,7 @@ void NRF24L_Init(void)
 		NRF24L_Write_RegByte(RF_CH, NRF_Freq);							// 设置 RF频率 = 2.4 + 0.120 GHz
 		NRF24L_Write_RegByte(RF_SETUP, 0x0F);							// 设置TX发射参数：0db增益、2Mbps、低噪声增益开启
 		NRF24L_Write_RegByte(CONFIG, 0x0F);								// 开所有中断、使能 16Bit_CRC校验、接收模式、上电
-		NRF_CE(HIGH);													// CE为高,进入接收模式		
+		NRF_CE(HIGH);													// CE为高,进入接收模式
 	}
 }
 

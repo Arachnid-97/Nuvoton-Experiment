@@ -8,7 +8,7 @@
 
 #define SW_PIN			P15
 
-#define MEAS_VOL        1600UL         // 检测电压
+#define MEAS_VOL        4950UL         // 外部检测电压
 
 #define UP				0xF0
 #define DOWN			0x0F

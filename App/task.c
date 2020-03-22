@@ -455,8 +455,8 @@ void Car_Control(void)
 			if(0 != Voltage_Check())
 			{
 				Protocol[6] = Data_Verify(&Protocol[1]);
+				NRF24L_SendPacket(Protocol, TX_PLOAD_WIDTH);
 				DUBUG_STRING(&Protocol[1], 6);
-				NRF24L_SendPacket(&Protocol, TX_PLOAD_WIDTH);
 			}
 			g_Gather_Time = 4;			// 约 200ms回检发送一次
 		}

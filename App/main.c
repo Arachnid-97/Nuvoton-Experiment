@@ -90,6 +90,10 @@ int main(void)
 	#endif /* _MAIN_UART */
 		
 #endif
+
+//		NRF24L_SendPacket(Protocol, TX_PLOAD_WIDTH);
+//		SoftwareDelay_ms(2000);
+
     }
 }
 
