@@ -8,7 +8,7 @@
   <Extensions>
     <cExt>*.c</cExt>
     <aExt>*.s*; *.src; *.a*</aExt>
-    <oExt>*.obj</oExt>
+    <oExt>*.obj; *.o</oExt>
     <lExt>*.lib</lExt>
     <tExt>*.txt; *.h; *.inc</tExt>
     <pExt>*.plm</pExt>
@@ -100,7 +100,10 @@
         <tRSysVw>1</tRSysVw>
         <sRunDeb>0</sRunDeb>
         <sLrtime>1</sLrtime>
-        <nTsel>10</nTsel>
+        <bEvRecOn>1</bEvRecOn>
+        <bSchkAxf>0</bSchkAxf>
+        <bTchkAxf>0</bTchkAxf>
+        <nTsel>-1</nTsel>
         <sDll></sDll>
         <sDllPa></sDllPa>
         <sDlgDll></sDlgDll>
@@ -262,9 +265,16 @@
       <LintExecutable></LintExecutable>
       <LintConfigFile></LintConfigFile>
       <bLintAuto>0</bLintAuto>
-      <Lin2Executable></Lin2Executable>
-      <Lin2ConfigFile></Lin2ConfigFile>
-      <bLin2Auto>0</bLin2Auto>
+      <bAutoGenD>0</bAutoGenD>
+      <LntExFlags>0</LntExFlags>
+      <pMisraName></pMisraName>
+      <pszMrule></pszMrule>
+      <pSingCmds></pSingCmds>
+      <pMultCmds></pMultCmds>
+      <pMisraNamep></pMisraNamep>
+      <pszMrulep></pszMrulep>
+      <pSingCmdsp></pSingCmdsp>
+      <pMultCmdsp></pMultCmdsp>
     </TargetOption>
   </Target>
 
@@ -401,8 +411,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\OLED_libraries\oled12864_drv.c</PathWithFileName>
-      <FilenameWithoutPath>oled12864_drv.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\Hardware\OLED_libraries\oled_extend.c</PathWithFileName>
+      <FilenameWithoutPath>oled_extend.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -413,8 +423,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\OLED_libraries\oled_extend.c</PathWithFileName>
-      <FilenameWithoutPath>oled_extend.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\Hardware\OLED_libraries\oled12864_drv.c</PathWithFileName>
+      <FilenameWithoutPath>oled12864_drv.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -425,8 +435,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\OLED_libraries\font_array.h</PathWithFileName>
-      <FilenameWithoutPath>font_array.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\Hardware\OLED_libraries\oled_font.h</PathWithFileName>
+      <FilenameWithoutPath>oled_font.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -437,8 +447,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\OLED_libraries\oled_font.h</PathWithFileName>
-      <FilenameWithoutPath>oled_font.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\Hardware\OLED_libraries\font_array.h</PathWithFileName>
+      <FilenameWithoutPath>font_array.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -457,7 +467,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Sense\sensors_series.c</PathWithFileName>
+      <PathWithFileName>..\..\Hardware\Sense\sensors_series.c</PathWithFileName>
       <FilenameWithoutPath>sensors_series.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -477,7 +487,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\Rocker\rocker_comm.c</PathWithFileName>
+      <PathWithFileName>..\..\Hardware\Rocker\rocker_comm.c</PathWithFileName>
       <FilenameWithoutPath>rocker_comm.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -497,7 +507,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\NRF24L01\nrf24l01_drv.c</PathWithFileName>
+      <PathWithFileName>..\..\Hardware\NRF24L01\nrf24l01_drv.c</PathWithFileName>
       <FilenameWithoutPath>nrf24l01_drv.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
